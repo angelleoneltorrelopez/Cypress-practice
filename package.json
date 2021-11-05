@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --reporter mochawesome --browser chrome",
+    "open": "npx cypress open",
+    "report": "npx mochawesome-merge -f ./mochawesome-report/*.json -o mochawesome-report/report.json && npx marge mochawesome-report/report.json",
+    "test:api": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/apis.spec.js\"",
+    "test:formulario": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/formulario.spec.js\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^8.3.1",
-    "junit": "^1.4.9",
-    "mochawesome": "^6.2.2"
+    "mochawesome": "^6.3.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }

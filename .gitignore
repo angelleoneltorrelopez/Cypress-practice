@@ -107,3 +107,7 @@ dist
 results/
 videos/
 screenshots/
+mochawesome-report/
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/

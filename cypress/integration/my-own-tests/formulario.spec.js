@@ -1,6 +1,9 @@
 /// <reference types="cypress" />
+import PracticeForm from '../../fixtures/POMs/practiceForm'
 
 describe('prueba de formulario', () =>{
+    const practiceForm = new PracticeForm()
+
     it('Registro de formulario con Datos Validos', () => {
         var firstName = "Angel"
         var lastName = "Torre"
@@ -8,34 +11,38 @@ describe('prueba de formulario', () =>{
         var mobileNumber = "1234567890";
 
         cy.visit('https://demoqa.com/automation-practice-form')
-        cy.get('#firstName')
+        practiceForm.inputName()
         .type(firstName).should('have.value', firstName)
 
-        cy.get('#lastName')
+        practiceForm.inputLastName()
         .type(lastName).should('have.value', lastName)
 
-        cy.get('#userEmail')
+        practiceForm.inputEmail()
         .type(email).should('have.value', email)
 
-        cy.get('label').contains('Male')
+        practiceForm.labelMaleGender()
         .click()
         
-        cy.get('#userNumber')
+        practiceForm.inputNumber()
         .type(mobileNumber).should('have.value', mobileNumber)
 
-        cy.get('#submit')
+        practiceForm.buttonSubmit()
         .click()
 
-        cy.get('table')
-        .contains('td', firstName + " " + lastName)
+        practiceForm.studentNameValueTable()
         .should('be.visible')
+        .should('have.text', firstName + " " + lastName)
 
-        cy.get('table')
-        .contains('td', email)
+        practiceForm.emailValueTable()
         .should('be.visible')
+        .should('have.text', email)
 
-        cy.get('table')
-        .contains('td', mobileNumber)
+        practiceForm.genderValueTable()
         .should('be.visible')
+        .should('have.text', 'Male')
+
+        practiceForm.mobileNumberValueTable()
+        .should('be.visible')
+        .should('have.text', mobileNumber)
     });
 })
