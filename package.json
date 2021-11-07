@@ -1,7 +1,8 @@
 {
   "name": "cypress-testing",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
+  "description": "automatizacion de pruebas con APIs y end-to-end",
+  "homepage": "https://www.dev.cognits.co/",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --reporter mochawesome --browser chrome",
@@ -10,13 +11,20 @@
     "test:api": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/apis.spec.js\"",
     "test:formulario": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/formulario.spec.js\""
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:angelleoneltorrelopez/Cypress-testing.git"
+  },
+  "keywords": [
+    "automatizacion",
+    "cypress"
+  ],
+  "author": "Angel Torre <angelleoneltorrelopez@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^8.3.1",
-    "mochawesome": "^6.3.1",
+    "cypress": "^8.7.0",
+    "mochawesome": "^7.0.1",
     "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^5.2.0"
+    "mochawesome-report-generator": "^6.0.1"
   }
 }

@@ -10,10 +10,10 @@ Optional
 ## Dependencies used
 | Name                           | Version |
 | ------------------------------ | ------- |
-| [cypress]                      |  8.5.0  |
-| [mochawesome]                  |  6.3.1  |
+| [cypress]                      |  8.7.0  |
+| [mochawesome]                  |  7.0.1  |
 | [mochawesome-merge]            |  4.2.0  |
-| [mochawesome-report-generator] |  5.2.0  |
+| [mochawesome-report-generator] |  6.0.1  |
 
 [cypress]: https://github.com/cypress-io/cypress
 [mochawesome]: https://github.com/adamgruber/mochawesome
