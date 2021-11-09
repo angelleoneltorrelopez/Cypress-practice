@@ -9,7 +9,8 @@
     "open": "npx cypress open",
     "report": "npx mochawesome-merge -f ./mochawesome-report/*.json -o mochawesome-report/report.json && npx marge mochawesome-report/report.json",
     "test:api": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/apis.spec.js\"",
-    "test:formulario": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/formulario.spec.js\""
+    "test:formulario": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/formulario.spec.js\"",
+    "lint": "eslint cypress/integration/"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^8.7.0",
+    "eslint": "^8.2.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "mochawesome": "^7.0.1",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^6.0.1"
