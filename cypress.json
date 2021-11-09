@@ -4,5 +4,8 @@
         "overwrite": false,
         "html": true,
         "json": true
-    }
+    },
+    "env": {
+        "apiUrl": "https://reqres.in/api"
+        }
 }

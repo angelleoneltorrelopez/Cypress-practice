@@ -1,8 +1,8 @@
 {
   "name": "cypress-testing",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "automatizacion de pruebas con APIs y end-to-end",
-  "homepage": "https://www.dev.cognits.co/",
+  "homepage": "https://demoqa.com/",
   "main": "index.js",
   "scripts": {
     "test": "npx cypress run --reporter mochawesome --browser chrome",
@@ -22,6 +22,9 @@
   ],
   "author": "Angel Torre <angelleoneltorrelopez@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angelleoneltorrelopez/Cypress-testing/issues"
+  },
   "dependencies": {
     "cypress": "^8.7.0",
     "eslint": "^8.2.0",

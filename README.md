@@ -1,21 +1,31 @@
+<p align="center">
+  <a href="https://www.cypress.io"><img src="https://cloud.githubusercontent.com/assets/1268976/20607953/d7ae489c-b24a-11e6-9cc4-91c6c74c5e88.png" width="300" height="100"/></a>
+<a href="https://www.ingenieriazeros.com/"><img src="https://1.bp.blogspot.com/-Q_GalsLLP0A/YYoUh73-MuI/AAAAAAAAMNc/OB4AIcWjB-UWJDKgH3c-kd0Syqt92lI-ACNcBGAsYHQ/s320/IMG_1169.PNG" width="150" height="150"></a>
+</p>
+
 # Requirement
 - [Nodejs] 14.17.4
 - NPM 6.14.14
 
 Optional
-- Browser Chrome
+- Browser [Chrome]
 
 [Nodejs]: https://nodejs.org/en/
+[Chrome]: https://www.google.com/intl/en/chrome/?brand=UUXU&gclid=Cj0KCQiAsqOMBhDFARIsAFBTN3eCVbkpkwoBLosJXeey1hn7pbEdennDfhsYeIcHX22Dvj-eOyK3gGUaAvagEALw_wcB&gclsrc=aw.ds
 
 ## Dependencies used
 | Name                           | Version |
 | ------------------------------ | ------- |
 | [cypress]                      |  8.7.0  |
+| [eslint]                       |  8.2.0  |
+| [eslint-plugin-cypress]        |  2.12.1 |
 | [mochawesome]                  |  7.0.1  |
 | [mochawesome-merge]            |  4.2.0  |
 | [mochawesome-report-generator] |  6.0.1  |
 
 [cypress]: https://github.com/cypress-io/cypress
+[eslint]: https://github.com/eslint/eslint
+[eslint-plugin-cypress]: https://github.com/cypress-io/eslint-plugin-cypress
 [mochawesome]: https://github.com/adamgruber/mochawesome
 [mochawesome-merge]: https://github.com/Antontelesh/mochawesome-merge
 [mochawesome-report-generator]: https://github.com/adamgruber/mochawesome-report-generator
@@ -29,6 +39,11 @@ npm install
 ## Open cypress
 ```bash
 npm run open
+```
+
+## Run EsLint
+```bash
+npm run lint
 ```
 
 ## Run all tests on the console

@@ -1,7 +1,9 @@
+const apiUsers = `${Cypress.env("apiUrl")}/users`
+
 describe("Testing API Endpoints Using Cypress", () => {
 
     it("Test GET Request", () => {
-          cy.request('https://reqres.in/api/users/2')
+          cy.request(apiUsers + '/2')
                .then((response) => {
                       expect(response.status).to.have.eq(200);
                       console.log(response.body.data);
@@ -11,7 +13,7 @@ describe("Testing API Endpoints Using Cypress", () => {
     it("Test POST Request", () => {
           cy.request({
                method: 'POST',
-               url: 'https://reqres.in/api/users',
+               url: apiUsers,
                body: {
                    "name" : "Angel Torre",
                    "job":"QA"
