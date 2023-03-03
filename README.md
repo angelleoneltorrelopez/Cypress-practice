@@ -16,12 +16,12 @@ Optional
 ## Dependencies used
 | Name                           | Version |
 | ------------------------------ | ------- |
-| [cypress]                      |  8.7.0  |
-| [eslint]                       |  8.2.0  |
+| [cypress]                      |  12.7.0  |
+| [eslint]                       |  8.34.0  |
 | [eslint-plugin-cypress]        |  2.12.1 |
-| [mochawesome]                  |  7.0.1  |
-| [mochawesome-merge]            |  4.2.0  |
-| [mochawesome-report-generator] |  6.0.1  |
+| [mochawesome]                  |  7.1.3  |
+| [mochawesome-merge]            |  4.2.2  |
+| [mochawesome-report-generator] |  6.2.0  |
 
 [cypress]: https://github.com/cypress-io/cypress
 [eslint]: https://github.com/eslint/eslint

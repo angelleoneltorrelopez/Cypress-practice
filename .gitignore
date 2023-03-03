@@ -115,3 +115,5 @@ cypress/videos/
 cypress/screenshots/
 cypress/downloads/
 package-lock.json
+allure-results/
+allure-report/
