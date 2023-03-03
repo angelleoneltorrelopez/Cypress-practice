@@ -3,9 +3,13 @@
         "cypress"
     ],
     "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
         "cypress/globals": true
     },
     "extends": [
+        "airbnb-base",
         "plugin:cypress/recommended"
     ],
     "parserOptions": {
@@ -13,8 +17,11 @@
         "sourceType": "module"
     },
     "rules": {
-        "cypress/no-assigning-return-values": "error",
-        "cypress/no-unnecessary-waiting": "warn",
+        "no-useless-escape": "error",
+        "class-methods-use-this": "off",
+        "func-names": "off",
+        "cypress/no-assigning-return-values": "off",
+        "cypress/no-unnecessary-waiting": "error",
         "cypress/assertion-before-screenshot": "error",
         "cypress/no-force": "warn",
         "cypress/no-async-tests": "error",

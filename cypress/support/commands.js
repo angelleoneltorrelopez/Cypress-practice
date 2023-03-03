@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import Login from '../fixtures/POMs/loginBootstrap';
+
+const login = new Login();
+
+Cypress.Commands.add('login', () => {
+  login.sendEmail('angelleoneltorrelopez@gmail.com');
+
+  login.sendPassword('123456789');
+
+  login.checkElement();
+
+  login.clickButton();
+});

@@ -1,20 +1,24 @@
 {
-  "name": "cypress-testing",
+  "name": "cypress-practice",
   "version": "1.2.0",
-  "description": "automatizacion de pruebas con APIs y end-to-end",
+  "description": "test automation with API and end-to-end",
   "homepage": "https://demoqa.com/",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run --reporter mochawesome --browser chrome",
+    "test:e2e": "npx cypress run --reporter mochawesome --browser chrome --spec 'cypress/e2e/**/*' --env allure=true",
+    "test:component": "npx cypress run --reporter mochawesome --browser chrome --component 'cypress/component/**/*'",
     "open": "npx cypress open",
-    "report": "npx mochawesome-merge -f ./mochawesome-report/*.json -o mochawesome-report/report.json && npx marge mochawesome-report/report.json",
-    "test:api": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/apis.spec.js\"",
-    "test:formulario": "npx cypress run --reporter mochawesome --browser chrome --spec \"cypress/integration/my-own-tests/formulario.spec.js\"",
-    "lint": "eslint cypress/integration/"
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:open": "allure open",
+    "report": "npx mochawesome-merge cypress/results/*.json -o cypress/results/report.json && npx marge cypress/results/report.json  --reportDir=./ --autoOpen=true --charts=true",
+    "delete:reports": "del-cli --force cypress/results",
+    "lint": "eslint cypress/",
+    "linux": "npx playwright install-deps webkit",
+    "docs": "jsdoc -c jsdoc.json"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:angelleoneltorrelopez/Cypress-testing.git"
+    "url": "git@github.com:angelleoneltorrelopez/Cypress-practice.git"
   },
   "keywords": [
     "automatizacion",
@@ -23,14 +27,25 @@
   "author": "Angel Torre <angelleoneltorrelopez@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/angelleoneltorrelopez/Cypress-testing/issues"
+    "url": "https://github.com/angelleoneltorrelopez/Cypress-practice/issues"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.35.2",
+    "cypress": "^12.6.0",
+    "del-cli": "^5.0.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.27.5",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0",
+    "playwright-webkit": "^1.30.0",
+    "vite": "^4.0.4",
+    "vue": "^3.2.45"
   },
   "dependencies": {
-    "cypress": "^8.7.0",
-    "eslint": "^8.2.0",
-    "eslint-plugin-cypress": "^2.12.1",
-    "mochawesome": "^7.0.1",
-    "mochawesome-merge": "^4.2.0",
-    "mochawesome-report-generator": "^6.0.1"
+    "@vitejs/plugin-vue": "^4.0.0",
+    "jsdoc": "^4.0.0"
   }
 }

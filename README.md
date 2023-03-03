@@ -4,8 +4,8 @@
 </p>
 
 # Requirement
-- [Nodejs] 14.17.4
-- NPM 6.14.14
+- [Nodejs] ^16.15.0
+- NPM ^8.5.5
 
 Optional
 - Browser [Chrome]
@@ -86,3 +86,14 @@ https://docs.cypress.io/
     * **Videos:** When the tests are run through the terminal, a video of the run is created and added to this folder.
 * **mochawesome-report:** Folder where the reports are generated.
 * **cypress.json** Cypress configuration file.
+
+## setting VScode (optional)
+### add extensions:
+* Cypress Helper
+* Cypress Snippets
+* ESLint
+
+1. Enter configurations and put in the search engine "format".
+2. In **Text editor**, find the option "Editor: default formatter" and select ESLINT.
+3. In **Text Editor**, find the option "Editor: Format on save" and select it.
+4. Go to **ESLint settings** in Extensions > ESLint drop-down list and enable Eslint> Format: Enable option.
