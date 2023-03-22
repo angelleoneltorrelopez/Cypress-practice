@@ -18,12 +18,12 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - uses: actions/download-artifact@v3
-        with:
-          name: allure
-          path: allure-report
       - name: E2E tests
         uses: cypress-io/github-action@v2
         with:
           command: npm run test:e2e
           wait-on: http://localhost:5000
+      - uses: actions/download-artifact@v3
+        with:
+          name: allure
+          path: allure-report
