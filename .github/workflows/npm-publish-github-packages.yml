@@ -22,8 +22,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run test:e2e
-      - name: Create report
-      - run: npm run allure:report
       - uses: actions/download-artifact@v3
         with:
           name: allure
