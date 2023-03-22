@@ -22,10 +22,16 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run test:e2e
-      - uses: actions/setup-node@v3
+          
+      - name: Display structure of downloaded files
+        run: ls -R
+          
+      - name: Allure Report with history
+        uses: simple-elf/allure-report-action@v1.6
         with:
-          node-version: 16
-      - run: npm run allure:report
+           allure_results: allure-results
+           allure_report: allure_report
+      
       - uses: actions/download-artifact@v3
         with:
           name: allure
