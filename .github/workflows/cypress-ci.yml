@@ -23,9 +23,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run test:e2e
-
-      - name: Copy allure history
-        run: cp -rf allure-report/history allure-results
           
       - name: Allure Report with history
         uses: simple-elf/allure-report-action@v1.6
