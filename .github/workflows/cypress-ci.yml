@@ -25,9 +25,7 @@ jobs:
           command: npm run test:e2e
 
       - name: Copy allure history
-      - run: |
-          rm -rf allure-results/history
-          cp -r allure-report/history allure-results
+        run: cp -rf allure-report/history allure-results
           
       - name: Allure Report with history
         uses: simple-elf/allure-report-action@v1.6
@@ -36,5 +34,4 @@ jobs:
            allure_report: allure_report
       
       - name: Logs
-      - run: |
-          ls -l 
+        run: ls -l 
