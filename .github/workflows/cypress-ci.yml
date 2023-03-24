@@ -47,7 +47,14 @@ jobs:
 
       - name: Merge PR if successful
         if: success()
-        uses: pullreminders/merge-action@v1.3.0
+        uses: buildsville/simple-merge@v1
+        id: merge
         with:
-          github_token: ${{ secrets.PERMISSION }}
-          strategy: merge-commit
+          token: ${{ secrets.PERMISSION }}
+          method: 'merge'
+          title: 'Automated merge by GitHub Actions'
+          message: 'commit message'
+          
+      - name: result
+        run: |
+          echo "result: ${{ steps.merge.outputs.result }}"
