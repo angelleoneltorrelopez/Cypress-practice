@@ -38,7 +38,7 @@ jobs:
 
       - name: Merge PR if successful
         if: success()
-        uses: pascalgn/automerge-action@v0.15.6
         id: automerge
+        uses: pascalgn/automerge-action@v0.15.6
         env:
           GITHUB_TOKEN: ${{ secrets.PERMISSION }}
