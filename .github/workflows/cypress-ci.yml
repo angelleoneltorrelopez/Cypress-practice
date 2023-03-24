@@ -41,5 +41,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.PERMISSION }}
           LOG: "TRACE"
-          UPDATE_LABELS: "automerge"
-          MERGE_LABELS: "automerge"
+          UPDATE_LABELS: automerge
+          MERGE_LABELS: automerge
