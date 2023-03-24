@@ -1,0 +1,102 @@
+{
+  "uid" : "e51e8a586f5482eb",
+  "name" : "Test PUT Request",
+  "fullName" : "Test PUT Request",
+  "historyId" : "86cf6edca652260554c26f75a148b907",
+  "time" : {
+    "start" : 1679616568473,
+    "stop" : 1679616568714,
+    "duration" : 241
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "PUT 200 https://reqres.in/api/users/2",
+      "time" : {
+        "start" : 1679616568505,
+        "stop" : 1679616568711,
+        "duration" : 206
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **job** of **Test Automation**",
+      "time" : {
+        "start" : 1679616568714,
+        "stop" : 1679616568714,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Test Automation"
+      }, {
+        "name" : "expected",
+        "value" : "Test Automation"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **job**",
+      "time" : {
+        "start" : 1679616568714,
+        "stop" : 1679616568714,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"name\": \"Angel\",\n  \"job\": \"Test Automation\",\n  \"updatedAt\": \"2023-03-24T00:09:28.656Z\"\n}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.apiTest.api.cy.js"
+  }, {
+    "name" : "suite",
+    "value" : "Testing API Endpoints Using Cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e51e8a586f5482eb.json",
+  "parameterValues" : [ ]
+}

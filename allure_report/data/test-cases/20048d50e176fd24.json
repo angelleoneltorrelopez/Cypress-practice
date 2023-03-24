@@ -1,0 +1,41 @@
+{
+  "uid" : "20048d50e176fd24",
+  "name" : "can divide numbers",
+  "fullName" : "can divide numbers",
+  "historyId" : "27659ad89d0dfbfa13c0667aea57243d",
+  "time" : {
+    "start" : 1679616573187,
+    "stop" : 1679616573232,
+    "duration" : 45
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.unitTest.unitTest.cy.js"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Unit Test Application Code"
+  }, {
+    "name" : "suite",
+    "value" : "math.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "20048d50e176fd24.json",
+  "parameterValues" : [ ]
+}

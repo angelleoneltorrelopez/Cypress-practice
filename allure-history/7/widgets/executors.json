@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://angelleoneltorrelopez.github.io/cypress-template",
+  "buildOrder" : 7,
+  "buildName" : "GitHub Actions Run #4506378907",
+  "buildUrl" : "https://github.com/angelleoneltorrelopez/cypress-template/actions/runs/4506378907",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://angelleoneltorrelopez.github.io/cypress-template/7/"
+} ]

@@ -1,0 +1,123 @@
+{
+  "uid" : "ac464d2ab5876b9a",
+  "name" : "Intercept - Status code",
+  "fullName" : "Intercept - Status code",
+  "historyId" : "ea111b748b26f1d544920491330c92c0",
+  "time" : {
+    "start" : 1679616596030,
+    "stop" : 1679616596288,
+    "duration" : 258
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "intercept (\"GET\"; \"**search?query=React&page=0\"; \"{ statusCode: 500 }\")",
+      "time" : {
+        "start" : 1679616596068,
+        "stop" : 1679616596073,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "as (\"waitTime\")",
+      "time" : {
+        "start" : 1679616596073,
+        "stop" : 1679616596073,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "visit https://wlsf82-hacker-stories.web.app",
+      "time" : {
+        "start" : 1679616596073,
+        "stop" : 1679616596249,
+        "duration" : 176
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "wait @waitTime",
+      "time" : {
+        "start" : 1679616596249,
+        "stop" : 1679616596287,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "@waitTime request",
+      "time" : {
+        "start" : 1679616596280,
+        "stop" : 1679616596280,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress.e2e.web.intercept.cy.js"
+  }, {
+    "name" : "suite",
+    "value" : "empty spec"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ac464d2ab5876b9a.json",
+  "parameterValues" : [ ]
+}
