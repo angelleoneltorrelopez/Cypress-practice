@@ -1,27 +1,60 @@
+/**
+ * Represents a Bootstrap login form.
+ */
 class loginBootstrap {
-    inputEmail = '#exampleInputEmail1';
-  
-    inputPassword = '#exampleInputPassword1';
-  
-    check = '#exampleCheck1';
-  
-    buttonSubmit = ':nth-child(9) > form > .btn';
-  
-    sendEmail(email) {
-      cy.get(this.inputEmail).type(email);
-    }
-  
-    sendPassword(password) {
-      cy.get(this.inputPassword).type(password);
-    }
-  
-    checkElement() {
-      cy.get(this.check).check();
-    }
-  
-    clickButton() {
-      cy.get(this.buttonSubmit).click();
-    }
+  /**
+   * The CSS selector for the email input field.
+   * @type {string}
+   */
+  inputEmail = '#exampleInputEmail1';
+
+  /**
+ * The CSS selector for the password input field.
+ * @type {string}
+ */
+  inputPassword = '#exampleInputPassword1';
+
+  /**
+ * The CSS selector for the "remember me" checkbox.
+ * @type {string}
+ */
+  check = '#exampleCheck1';
+
+  /**
+ * The CSS selector for the form submit button.
+ * @type {string}
+ */
+  buttonSubmit = ':nth-child(9) > form > .btn';
+
+  /**
+ * Types an email into the email input field.
+ * @param {string} email - The email to type.
+ */
+  sendEmail(email) {
+    cy.get(this.inputEmail).type(email);
   }
-  
-  export default loginBootstrap;
+
+  /**
+   * Types a password into the password input field.
+   * @param {string} password - The password to type.
+   */
+  sendPassword(password) {
+    cy.get(this.inputPassword).type(password);
+  }
+
+  /**
+   * Checks the "remember me" checkbox.
+   */
+  checkElement() {
+    cy.get(this.check).check();
+  }
+
+  /**
+   * Clicks the form submit button.
+   */
+  clickButton() {
+    cy.get(this.buttonSubmit).click();
+  }
+}
+
+export default loginBootstrap;
