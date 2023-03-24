@@ -17,7 +17,7 @@ describe('Login test', () => {
         cy.get(loginSauceDemo.inputUser).type('standard_user222');
         cy.get(loginSauceDemo.inputPassword).type('secret_sauce');
         cy.get(loginSauceDemo.buttonLogin).click();
-        cy.get(loginSauceDemo.errorMessage).should('have.text', 'Epic sadface: Username and password do not match any user in this service')
+        cy.get(loginSauceDemo.errorMessage).should('have.text', 'Epic sadface: Username and password do not match any user in this service');
     });
 
     it('User blocked', () => {
@@ -25,6 +25,6 @@ describe('Login test', () => {
         cy.get(loginSauceDemo.inputUser).type('locked_out_user');
         cy.get(loginSauceDemo.inputPassword).type('secret_sauce');
         cy.get(loginSauceDemo.buttonLogin).click();
-        cy.get(loginSauceDemo.errorMessage).should('have.text', 'Epic sadface: Sorry, this user has been locked out.')
+        cy.get(loginSauceDemo.errorMessage).should('have.text', 'Epic sadface: Sorry, this user has been locked out.');
     });
 })
