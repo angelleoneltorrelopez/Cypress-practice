@@ -35,26 +35,15 @@ jobs:
       
       - name: Logs
         run: ls -R
-        
-      - name: Commit and push changes
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git checkout ${{ github.event.pull_request.head.ref }}
-          git add .
-          git commit -m "Automated commit by GitHub Actions"
-          git push origin ${{ github.event.pull_request.head.ref }}
 
       - name: Merge PR if successful
         if: success()
-        uses: buildsville/simple-merge@v1
-        id: merge
-        with:
-          token: ${{ secrets.PERMISSION }}
-          method: 'merge'
-          title: 'Automated merge by GitHub Actions'
-          message: 'commit message'
+        uses: pascalgn/automerge-action@v0.15.6
+        id: automerge
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERMISSION }}
           
-      - name: result
+      - name: feedback
+        if: steps.automerge.outputs.mergeResult == "merged"
         run: |
-          echo "result: ${{ steps.merge.outputs.result }}"
+          echo "Pull request ${{ steps.automerge.outputs.pullRequestNumber }} merged!"
