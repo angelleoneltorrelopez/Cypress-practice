@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 7,
-  "reportUrl" : "https://angelleoneltorrelopez.github.io/cypress-template/7/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 21,
-    "retry" : 1
-  }
-} ]
