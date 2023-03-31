@@ -30,8 +30,11 @@
     "url": "https://github.com/angelleoneltorrelopez/Cypress-practice/issues"
   },
   "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@cypress-audit/pa11y": "^1.4.2",
     "@shelex/cypress-allure-plugin": "^2.37.0",
     "cypress": "^12.8.1",
+    "cypress-audit": "^1.1.0",
     "del-cli": "^5.0.0",
     "eslint": "^8.36.0",
     "eslint-config-airbnb-base": "^15.0.0",

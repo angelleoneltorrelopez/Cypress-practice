@@ -1,3 +1,4 @@
+/// <reference types="Cypress" />
 import LoginSauceDemo from '../../fixtures/POMs/loginSauceDemo.js';
 const loginSauceDemo = new LoginSauceDemo();
 describe('Login test', () => {
