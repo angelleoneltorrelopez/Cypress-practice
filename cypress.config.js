@@ -13,6 +13,7 @@ const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 const { pa11y } = require("@cypress-audit/pa11y");
 
 module.exports = defineConfig({
+  projectId: 'xvwk2z',
  
   e2e: {
     // eslint-disable-next-line no-unused-vars
