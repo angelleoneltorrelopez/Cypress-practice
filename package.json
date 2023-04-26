@@ -5,6 +5,7 @@
   "homepage": "https://demoqa.com/",
   "main": "index.js",
   "scripts": {
+    "test:record": "npx cypress run --record --key 98bd4824-294f-4b1c-b4eb-a10e8bcf3f5d",
     "test:e2e": "npx cypress run --reporter mochawesome --browser chrome --spec 'cypress/e2e/**/*' --env allure=true",
     "test:component": "npx cypress run --reporter mochawesome --browser chrome --component 'cypress/component/**/*'",
     "open": "npx cypress open",
