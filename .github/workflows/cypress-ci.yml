@@ -30,3 +30,8 @@ jobs:
         with:
            allure_results: allure-results
            allure_report: docs
+           
+      - name: Add & Commit
+        uses: EndBug/add-and-commit@v9.1.2
+        with:
+          add: /docs
