@@ -1,1 +1,221 @@
-[{"uid":"3406e53881f71a47","name":"can subtract numbers","time":{"start":1680222311930,"stop":1680222311949,"duration":19},"status":"passed","severity":"normal"},{"uid":"2e834e963a78d420","name":"passes","time":{"start":1680222320567,"stop":1680222325191,"duration":4624},"status":"passed","severity":"normal"},{"uid":"e49c4a0879f2ec72","name":"can divide numbers","time":{"start":1680222311950,"stop":1680222311971,"duration":21},"status":"passed","severity":"normal"},{"uid":"7337c5c7a57192d6","name":"can add numbers","time":{"start":1680222311925,"stop":1680222311928,"duration":3},"status":"passed","severity":"normal"},{"uid":"4a281674c4f978d5","name":"Intercept - Fixture","time":{"start":1680222332465,"stop":1680222333248,"duration":783},"status":"passed","severity":"normal"},{"uid":"22175f33fd9772df","name":"User blocked","time":{"start":1680222368221,"stop":1680222369017,"duration":796},"status":"passed","severity":"critical"},{"uid":"5f1578f265593ceb","name":"Login failed","time":{"start":1680222367255,"stop":1680222368216,"duration":961},"status":"passed","severity":"critical"},{"uid":"d3b3756d4dc34ca","name":"Wait for http request","time":{"start":1680222378246,"stop":1680222379219,"duration":973},"status":"passed","severity":"normal"},{"uid":"c10102461d666e5c","name":"Test POST Request 1","time":{"start":1680222314961,"stop":1680222315277,"duration":316},"status":"passed","severity":"normal"},{"uid":"fc83b02fc925f7a6","name":"explicit wait","time":{"start":1680222373170,"stop":1680222378239,"duration":5069},"status":"passed","severity":"normal"},{"uid":"35ba8a5cdd0f2dfe","name":"returns \"fizzbuzz\" when number is multiple of both 3 and 5","time":{"start":1680222312042,"stop":1680222312062,"duration":20},"status":"passed","severity":"normal"},{"uid":"2592a17090c0e0ed","name":"Intercept - Status code","time":{"start":1680222333255,"stop":1680222333414,"duration":159},"status":"passed","severity":"normal"},{"uid":"8748980a0172d9b8","name":"Test GET Request","time":{"start":1680222314357,"stop":1680222314956,"duration":599},"status":"passed","severity":"normal"},{"uid":"91e5544e28826211","name":"audits the home page","time":{"start":1680222337999,"stop":1680222361503,"duration":23504},"status":"passed","severity":"normal"},{"uid":"cb72e2b31c87bc2e","name":"Test POST Request 2","time":{"start":1680222315278,"stop":1680222315578,"duration":300},"status":"passed","severity":"normal"},{"uid":"a42a0aaf3430797","name":"Test PUT Request","time":{"start":1680222315579,"stop":1680222315895,"duration":316},"status":"passed","severity":"normal"},{"uid":"a97f3b57e9efb50e","name":"Login successful","time":{"start":1680222364994,"stop":1680222367248,"duration":2254},"status":"passed","severity":"critical"},{"uid":"9bde00ae12fddfa4","name":"can muliple numbers","time":{"start":1680222311972,"stop":1680222311993,"duration":21},"status":"passed","severity":"normal"},{"uid":"6c9bedacb33fab0e","name":"Download PDF","time":{"start":1680222328198,"stop":1680222328670,"duration":472},"status":"passed","severity":"normal"},{"uid":"6ff78c36d1d3f9d9","name":"Test DELETE Request","time":{"start":1680222316211,"stop":1680222316523,"duration":312},"status":"passed","severity":"normal"},{"uid":"84bab64e17e7262b","name":"returns \"fizz\" when number is multiple of 3","time":{"start":1680222311995,"stop":1680222312017,"duration":22},"status":"passed","severity":"normal"},{"uid":"5a66089512d61d04","name":"returns \"buzz\" when number is multiple of 5","time":{"start":1680222312018,"stop":1680222312041,"duration":23},"status":"passed","severity":"normal"}]
+[ {
+  "uid" : "6a12c56ec4b3025b",
+  "name" : "can divide numbers",
+  "time" : {
+    "start" : 1680222311950,
+    "stop" : 1680222311971,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "352d8ea76f99845d",
+  "name" : "Login successful",
+  "time" : {
+    "start" : 1680222364994,
+    "stop" : 1680222367248,
+    "duration" : 2254
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "dec262733eb5036f",
+  "name" : "Wait for http request",
+  "time" : {
+    "start" : 1680222378246,
+    "stop" : 1680222379219,
+    "duration" : 973
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "965cb0c6e2f96abf",
+  "name" : "returns \"fizzbuzz\" when number is multiple of both 3 and 5",
+  "time" : {
+    "start" : 1680222312042,
+    "stop" : 1680222312062,
+    "duration" : 20
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a1b04a81889e20b1",
+  "name" : "returns \"buzz\" when number is multiple of 5",
+  "time" : {
+    "start" : 1680222312018,
+    "stop" : 1680222312041,
+    "duration" : 23
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "56c4675d817b90f2",
+  "name" : "Test POST Request 1",
+  "time" : {
+    "start" : 1680222314961,
+    "stop" : 1680222315277,
+    "duration" : 316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65b99a72ab37c86",
+  "name" : "Download PDF",
+  "time" : {
+    "start" : 1680222328198,
+    "stop" : 1680222328670,
+    "duration" : 472
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd534feb52708ccb",
+  "name" : "Intercept - Fixture",
+  "time" : {
+    "start" : 1680222332465,
+    "stop" : 1680222333248,
+    "duration" : 783
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "45efd2b78c4a78f6",
+  "name" : "Test GET Request",
+  "time" : {
+    "start" : 1680222314357,
+    "stop" : 1680222314956,
+    "duration" : 599
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2ef6aff4825cdd3",
+  "name" : "returns \"fizz\" when number is multiple of 3",
+  "time" : {
+    "start" : 1680222311995,
+    "stop" : 1680222312017,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d9ff0a57e82b574",
+  "name" : "explicit wait",
+  "time" : {
+    "start" : 1680222373170,
+    "stop" : 1680222378239,
+    "duration" : 5069
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3fb3d6e6485bb77a",
+  "name" : "passes",
+  "time" : {
+    "start" : 1680222320567,
+    "stop" : 1680222325191,
+    "duration" : 4624
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae8876a6341a0ac",
+  "name" : "Intercept - Status code",
+  "time" : {
+    "start" : 1680222333255,
+    "stop" : 1680222333414,
+    "duration" : 159
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65bfcf9985561216",
+  "name" : "Test PUT Request",
+  "time" : {
+    "start" : 1680222315579,
+    "stop" : 1680222315895,
+    "duration" : 316
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c2b834802264a17d",
+  "name" : "User blocked",
+  "time" : {
+    "start" : 1680222368221,
+    "stop" : 1680222369017,
+    "duration" : 796
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "7a3493f7c34e1d79",
+  "name" : "can subtract numbers",
+  "time" : {
+    "start" : 1680222311930,
+    "stop" : 1680222311949,
+    "duration" : 19
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "647acd1b4dd2f4ba",
+  "name" : "Login failed",
+  "time" : {
+    "start" : 1680222367255,
+    "stop" : 1680222368216,
+    "duration" : 961
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "d22ad195a4a68b65",
+  "name" : "can add numbers",
+  "time" : {
+    "start" : 1680222311925,
+    "stop" : 1680222311928,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aca578c4e51aec93",
+  "name" : "Test DELETE Request",
+  "time" : {
+    "start" : 1680222316211,
+    "stop" : 1680222316523,
+    "duration" : 312
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1357d0de023e3cbf",
+  "name" : "Test POST Request 2",
+  "time" : {
+    "start" : 1680222315278,
+    "stop" : 1680222315578,
+    "duration" : 300
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9b21278444b516c5",
+  "name" : "audits the home page",
+  "time" : {
+    "start" : 1680222337999,
+    "stop" : 1680222361503,
+    "duration" : 23504
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "12b6c46bf4c8ff3",
+  "name" : "can muliple numbers",
+  "time" : {
+    "start" : 1680222311972,
+    "stop" : 1680222311993,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

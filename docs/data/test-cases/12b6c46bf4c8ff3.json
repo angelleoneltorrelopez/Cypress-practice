@@ -1,0 +1,41 @@
+{
+  "uid" : "12b6c46bf4c8ff3",
+  "name" : "can muliple numbers",
+  "fullName" : "can muliple numbers",
+  "historyId" : "8cc3c825f442328737ab9be29af7c952",
+  "time" : {
+    "start" : 1680222311972,
+    "stop" : 1680222311993,
+    "duration" : 21
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress\\e2e\\unitTest\\unitTest.cy.js"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Unit Test Application Code"
+  }, {
+    "name" : "suite",
+    "value" : "math.js"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "12b6c46bf4c8ff3.json",
+  "parameterValues" : [ ]
+}

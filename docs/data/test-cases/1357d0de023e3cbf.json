@@ -1,0 +1,141 @@
+{
+  "uid" : "1357d0de023e3cbf",
+  "name" : "Test POST Request 2",
+  "fullName" : "Test POST Request 2",
+  "historyId" : "3c6ffb63d0a6b7851f8df638311dc3a8",
+  "time" : {
+    "start" : 1680222315278,
+    "stop" : 1680222315578,
+    "duration" : 300
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST 201 https://reqres.in/api/users",
+      "time" : {
+        "start" : 1680222315292,
+        "stop" : 1680222315576,
+        "duration" : 284
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **name** of **Angel Torre**",
+      "time" : {
+        "start" : 1680222315578,
+        "stop" : 1680222315578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "Angel Torre"
+      }, {
+        "name" : "expected",
+        "value" : "Angel Torre"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **job**",
+      "time" : {
+        "start" : 1680222315578,
+        "stop" : 1680222315578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"name\": \"Angel Torre\",\n  \"job\": \"QA\",\n  \"id\": \"315\",\n  \"createdAt\": \"2023-03-31T00:25:11.344Z\"\n}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **job** of **QA**",
+      "time" : {
+        "start" : 1680222315578,
+        "stop" : 1680222315578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "QA"
+      }, {
+        "name" : "expected",
+        "value" : "QA"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "assert expected **{ Object (name, job, ...) }** to have property **name**",
+      "time" : {
+        "start" : 1680222315578,
+        "stop" : 1680222315578,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "actual",
+        "value" : "{\n  \"name\": \"Angel Torre\",\n  \"job\": \"QA\",\n  \"id\": \"315\",\n  \"createdAt\": \"2023-03-31T00:25:11.344Z\"\n}"
+      } ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "cypress\\e2e\\apiTest\\api.cy.js"
+  }, {
+    "name" : "suite",
+    "value" : "Testing API Endpoints Using Cypress"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1357d0de023e3cbf.json",
+  "parameterValues" : [ ]
+}
