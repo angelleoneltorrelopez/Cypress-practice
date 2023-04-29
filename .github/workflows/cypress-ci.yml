@@ -20,9 +20,10 @@ jobs:
       - name: Run tests
         uses: cypress-io/github-action@v5
         with:
+          browser: chrome
           record: true
           parallel: true
-          command: npm run test:e2e
+          start: npm run record
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
           
