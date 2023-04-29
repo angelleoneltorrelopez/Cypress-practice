@@ -21,9 +21,12 @@ jobs:
           browser: chrome
           record: true
           parallel: true
-          start: npm run record
+          start: npm run test:e2e
         env:
           CYPRESS_RECORD_KEY: ${{secrets.CYPRESS_RECORD_KEY}}
+          
+      - name: Copy history folder
+        run: cp -Rf ./docs/history ./allure-results/
           
       - name: Allure Report
         uses: simple-elf/allure-report-action@v1.6
