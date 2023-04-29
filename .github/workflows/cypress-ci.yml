@@ -3,7 +3,7 @@ name: Cypress test
 on: push
 
 jobs:
-  cypress-run::
+  install:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: true
